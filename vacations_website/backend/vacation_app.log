@@ -1,0 +1,137 @@
+INFO 2025-08-30 18:56:49,644 autoreload Watching for file changes with StatReloader
+INFO 2025-08-30 18:57:09,068 basehttp "HEAD / HTTP/1.1" 302 0
+INFO 2025-08-30 18:57:09,102 basehttp "HEAD / HTTP/1.0" 302 0
+INFO 2025-08-30 18:57:50,049 basehttp "GET / HTTP/1.1" 302 0
+INFO 2025-08-30 18:57:50,062 basehttp "GET /login/?next=/ HTTP/1.1" 200 3370
+WARNING 2025-08-30 18:57:50,077 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+WARNING 2025-08-30 18:57:50,078 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-08-30 18:57:50,149 log Not Found: /favicon.ico
+WARNING 2025-08-30 18:57:50,150 basehttp "GET /favicon.ico HTTP/1.1" 404 4788
+INFO 2025-08-30 18:57:55,850 basehttp "POST /login/?next=/ HTTP/1.1" 302 0
+INFO 2025-08-30 18:57:55,867 basehttp "GET / HTTP/1.1" 200 32342
+WARNING 2025-08-30 18:57:55,890 log Not Found: /media/images/vacation_images/madrid.jpg
+WARNING 2025-08-30 18:57:55,892 log Not Found: /media/images/vacation_images/telaviv.jpg
+WARNING 2025-08-30 18:57:55,895 log Not Found: /media/images/vacation_images/rome.jpg
+WARNING 2025-08-30 18:57:55,898 log Not Found: /media/images/vacation_images/paris.jpg
+WARNING 2025-08-30 18:57:55,898 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+WARNING 2025-08-30 18:57:55,898 basehttp "GET /media/images/vacation_images/telaviv.jpg HTTP/1.1" 404 5082
+WARNING 2025-08-30 18:57:55,898 basehttp "GET /media/images/vacation_images/madrid.jpg HTTP/1.1" 404 5078
+WARNING 2025-08-30 18:57:55,898 basehttp "GET /media/images/vacation_images/rome.jpg HTTP/1.1" 404 5070
+WARNING 2025-08-30 18:57:55,899 log Not Found: /media/images/vacation_images/default.jpg
+WARNING 2025-08-30 18:57:55,900 basehttp "GET /media/images/vacation_images/paris.jpg HTTP/1.1" 404 5074
+WARNING 2025-08-30 18:57:55,903 log Not Found: /media/images/vacation_images/rio.jpg
+WARNING 2025-08-30 18:57:55,905 log Not Found: /media/images/vacation_images/berlin.jpg
+WARNING 2025-08-30 18:57:55,906 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-08-30 18:57:55,906 basehttp "GET /media/images/vacation_images/default.jpg HTTP/1.1" 404 5082
+WARNING 2025-08-30 18:57:55,907 log Not Found: /media/images/vacation_images/buenosaires.jpg
+WARNING 2025-08-30 18:57:55,909 log Not Found: /media/images/vacation_images/tokyo.jpg
+WARNING 2025-08-30 18:57:55,909 basehttp "GET /media/images/vacation_images/rio.jpg HTTP/1.1" 404 5066
+WARNING 2025-08-30 18:57:55,910 basehttp "GET /media/images/vacation_images/berlin.jpg HTTP/1.1" 404 5078
+WARNING 2025-08-30 18:57:55,912 basehttp "GET /media/images/vacation_images/buenosaires.jpg HTTP/1.1" 404 5098
+WARNING 2025-08-30 18:57:55,913 basehttp "GET /media/images/vacation_images/tokyo.jpg HTTP/1.1" 404 5074
+WARNING 2025-08-30 18:57:55,915 log Not Found: /media/images/vacation_images/nyc.jpg
+WARNING 2025-08-30 18:57:55,916 log Not Found: /media/images/vacation_images/losangeles.jpg
+WARNING 2025-08-30 18:57:55,918 log Not Found: /media/images/vacation_images/sydney.jpg
+WARNING 2025-08-30 18:57:55,919 log Not Found: /media/images/vacation_images/medellin.jpg
+WARNING 2025-08-30 18:57:55,920 basehttp "GET /media/images/vacation_images/nyc.jpg HTTP/1.1" 404 5066
+WARNING 2025-08-30 18:57:55,920 basehttp "GET /media/images/vacation_images/losangeles.jpg HTTP/1.1" 404 5094
+WARNING 2025-08-30 18:57:55,921 basehttp "GET /media/images/vacation_images/sydney.jpg HTTP/1.1" 404 5078
+WARNING 2025-08-30 18:57:55,921 basehttp "GET /media/images/vacation_images/medellin.jpg HTTP/1.1" 404 5086
+INFO 2025-08-30 18:58:08,094 basehttp "GET / HTTP/1.1" 200 32058
+WARNING 2025-08-30 18:58:08,111 log Not Found: /media/images/vacation_images/default.jpg
+WARNING 2025-08-30 18:58:08,114 log Not Found: /media/images/vacation_images/rome.jpg
+WARNING 2025-08-30 18:58:08,116 log Not Found: /media/images/vacation_images/telaviv.jpg
+WARNING 2025-08-30 18:58:08,119 log Not Found: /media/images/vacation_images/paris.jpg
+WARNING 2025-08-30 18:58:08,121 log Not Found: /media/images/vacation_images/madrid.jpg
+WARNING 2025-08-30 18:58:08,121 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+WARNING 2025-08-30 18:58:08,122 basehttp "GET /media/images/vacation_images/default.jpg HTTP/1.1" 404 5082
+WARNING 2025-08-30 18:58:08,123 basehttp "GET /media/images/vacation_images/rome.jpg HTTP/1.1" 404 5070
+WARNING 2025-08-30 18:58:08,124 basehttp "GET /media/images/vacation_images/telaviv.jpg HTTP/1.1" 404 5082
+WARNING 2025-08-30 18:58:08,127 basehttp "GET /media/images/vacation_images/paris.jpg HTTP/1.1" 404 5074
+WARNING 2025-08-30 18:58:08,127 basehttp "GET /media/images/vacation_images/madrid.jpg HTTP/1.1" 404 5078
+WARNING 2025-08-30 18:58:08,128 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-08-30 18:58:08,132 log Not Found: /media/images/vacation_images/berlin.jpg
+WARNING 2025-08-30 18:58:08,135 log Not Found: /media/images/vacation_images/tokyo.jpg
+WARNING 2025-08-30 18:58:08,137 log Not Found: /media/images/vacation_images/buenosaires.jpg
+WARNING 2025-08-30 18:58:08,138 log Not Found: /media/images/vacation_images/rio.jpg
+WARNING 2025-08-30 18:58:08,140 log Not Found: /media/images/vacation_images/nyc.jpg
+WARNING 2025-08-30 18:58:08,141 basehttp "GET /media/images/vacation_images/berlin.jpg HTTP/1.1" 404 5078
+WARNING 2025-08-30 18:58:08,144 log Not Found: /media/images/vacation_images/sydney.jpg
+WARNING 2025-08-30 18:58:08,144 basehttp "GET /media/images/vacation_images/tokyo.jpg HTTP/1.1" 404 5074
+WARNING 2025-08-30 18:58:08,144 basehttp "GET /media/images/vacation_images/rio.jpg HTTP/1.1" 404 5066
+WARNING 2025-08-30 18:58:08,145 basehttp "GET /media/images/vacation_images/buenosaires.jpg HTTP/1.1" 404 5098
+WARNING 2025-08-30 18:58:08,145 basehttp "GET /media/images/vacation_images/nyc.jpg HTTP/1.1" 404 5066
+WARNING 2025-08-30 18:58:08,147 log Not Found: /media/images/vacation_images/medellin.jpg
+WARNING 2025-08-30 18:58:08,148 basehttp "GET /media/images/vacation_images/sydney.jpg HTTP/1.1" 404 5078
+WARNING 2025-08-30 18:58:08,150 log Not Found: /media/images/vacation_images/losangeles.jpg
+WARNING 2025-08-30 18:58:08,151 basehttp "GET /media/images/vacation_images/losangeles.jpg HTTP/1.1" 404 5094
+WARNING 2025-08-30 18:58:08,150 basehttp "GET /media/images/vacation_images/medellin.jpg HTTP/1.1" 404 5086
+INFO 2025-08-30 18:58:09,257 basehttp "GET /edit/13/ HTTP/1.1" 200 6101
+WARNING 2025-08-30 18:58:09,268 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-08-30 18:58:09,271 log Not Found: /media/images/vacation_images/default.jpg
+WARNING 2025-08-30 18:58:09,272 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+WARNING 2025-08-30 18:58:09,272 basehttp "GET /media/images/vacation_images/default.jpg HTTP/1.1" 404 5082
+INFO 2025-08-30 18:59:51,689 autoreload Watching for file changes with StatReloader
+WARNING 2025-08-30 18:59:56,293 log Not Found: /media/images/vacation_images/paris.jpg
+WARNING 2025-08-30 18:59:56,294 basehttp "HEAD /media/images/vacation_images/paris.jpg HTTP/1.1" 404 0
+INFO 2025-08-30 19:01:09,129 autoreload Watching for file changes with StatReloader
+INFO 2025-08-30 19:01:27,949 basehttp "HEAD /media/images/vacation_images/paris.jpg HTTP/1.1" 200 0
+INFO 2025-08-30 19:01:33,592 basehttp "GET /login/ HTTP/1.1" 200 3370
+INFO 2025-08-30 19:26:22,632 basehttp "GET / HTTP/1.1" 200 32058
+WARNING 2025-08-30 19:26:22,651 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+INFO 2025-08-30 19:26:22,653 basehttp "GET /media/images/vacation_images/default.jpg HTTP/1.1" 200 11
+WARNING 2025-08-30 19:26:22,657 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-08-30 19:26:22,666 basehttp "GET /media/images/vacation_images/madrid.jpg HTTP/1.1" 200 152848
+INFO 2025-08-30 19:26:22,668 basehttp "GET /media/images/vacation_images/paris.jpg HTTP/1.1" 200 321594
+INFO 2025-08-30 19:26:22,672 basehttp "GET /media/images/vacation_images/berlin.jpg HTTP/1.1" 200 221768
+INFO 2025-08-30 19:26:22,673 basehttp "GET /media/images/vacation_images/telaviv.jpg HTTP/1.1" 200 245534
+INFO 2025-08-30 19:26:22,681 basehttp "GET /media/images/vacation_images/tokyo.jpg HTTP/1.1" 200 569660
+INFO 2025-08-30 19:26:22,691 basehttp "GET /media/images/vacation_images/rio.jpg HTTP/1.1" 200 101606
+INFO 2025-08-30 19:26:22,697 basehttp "GET /media/images/vacation_images/losangeles.jpg HTTP/1.1" 200 9832
+INFO 2025-08-30 19:26:22,698 basehttp "GET /media/images/vacation_images/sydney.jpg HTTP/1.1" 200 71862
+INFO 2025-08-30 19:26:22,704 basehttp "GET /media/images/vacation_images/nyc.jpg HTTP/1.1" 200 393340
+INFO 2025-08-30 19:26:22,706 basehttp "GET /media/images/vacation_images/medellin.jpg HTTP/1.1" 200 647559
+INFO 2025-08-30 19:26:22,706 basehttp "GET /media/images/vacation_images/buenosaires.jpg HTTP/1.1" 200 625274
+INFO 2025-08-30 19:26:22,821 basehttp "GET /media/images/vacation_images/rome.jpg HTTP/1.1" 200 13448632
+INFO 2025-08-30 19:26:35,216 basehttp "GET /edit/13/ HTTP/1.1" 200 6101
+WARNING 2025-08-30 19:26:35,229 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+WARNING 2025-08-30 19:26:35,232 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-08-30 19:27:31,062 basehttp "HEAD /media/images/vacation_images/default.jpg HTTP/1.1" 200 0
+INFO 2025-08-30 19:27:54,493 basehttp "HEAD /media/images/vacation_images/telaviv.jpg HTTP/1.1" 200 0
+INFO 2025-08-30 19:29:23,035 basehttp "GET / HTTP/1.1" 200 32058
+WARNING 2025-08-30 19:29:23,051 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+WARNING 2025-08-30 19:29:23,054 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-08-30 19:30:27,724 basehttp "HEAD /media/images/vacation_images/tokyo.jpg HTTP/1.1" 200 0
+INFO 2025-08-30 19:31:13,006 basehttp "GET / HTTP/1.1" 200 32058
+WARNING 2025-08-30 19:31:13,023 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+WARNING 2025-08-30 19:31:13,027 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-08-30 19:31:15,357 basehttp "GET / HTTP/1.1" 200 32058
+WARNING 2025-08-30 19:31:15,372 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+WARNING 2025-08-30 19:31:15,375 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-08-30 19:31:16,218 basehttp "GET / HTTP/1.1" 200 32058
+WARNING 2025-08-30 19:31:16,232 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+WARNING 2025-08-30 19:31:16,235 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-08-30 19:31:26,039 basehttp "GET /edit/1/ HTTP/1.1" 200 6265
+WARNING 2025-08-30 19:31:26,057 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+WARNING 2025-08-30 19:31:26,058 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+INFO 2025-08-30 19:32:19,157 basehttp "GET / HTTP/1.1" 200 32058
+WARNING 2025-08-30 19:32:19,175 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+WARNING 2025-08-30 19:32:19,178 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-08-30 19:32:29,997 basehttp "GET / HTTP/1.1" 200 32058
+WARNING 2025-08-30 19:32:30,014 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+WARNING 2025-08-30 19:32:30,019 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-08-30 19:32:54,120 basehttp "GET / HTTP/1.1" 200 32056
+WARNING 2025-08-30 19:32:54,135 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+WARNING 2025-08-30 19:32:54,136 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-08-30 19:33:02,742 basehttp "GET / HTTP/1.1" 200 32056
+WARNING 2025-08-30 19:33:02,753 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+WARNING 2025-08-30 19:33:02,755 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-08-30 21:26:02,020 basehttp "GET / HTTP/1.1" 200 32056
+WARNING 2025-08-30 21:26:02,039 basehttp "GET /static/css/style.css HTTP/1.1" 404 1853
+WARNING 2025-08-30 21:26:02,042 basehttp "GET /static/js/script.js HTTP/1.1" 404 1850
+INFO 2025-08-30 21:30:42,202 basehttp "GET / HTTP/1.1" 302 0
+INFO 2025-08-30 21:30:42,203 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-08-31 15:04:39,708 basehttp "GET / HTTP/1.1" 302 0
+INFO 2025-08-31 15:04:39,710 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-08-31 20:17:03,499 autoreload /app/vacation_project/settings.py changed, reloading.
+INFO 2025-08-31 20:17:03,778 autoreload Watching for file changes with StatReloader
