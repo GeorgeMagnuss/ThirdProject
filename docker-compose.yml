@@ -53,7 +53,7 @@ services:
       database:
         condition: service_healthy
     volumes:
-      - ./vacations_website:/app
+      - ./vacations_website/backend:/app
 
   vacations-frontend:
     image: georgem94/vacations-frontend:latest
