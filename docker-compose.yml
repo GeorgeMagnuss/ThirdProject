@@ -61,6 +61,9 @@ services:
       - "8080:80"
     depends_on:
       - vacations-backend
+    volumes:
+      - ./vacations_website/static:/usr/share/nginx/html/static
+      - ./vacations_website/media:/usr/share/nginx/html/media
 
 volumes:
   postgres_data:
