@@ -42,7 +42,7 @@ services:
   vacations-backend:
     image: georgem94/vacations-backend:latest
     ports:
-      - "8001:8000"
+      - "8001:8001"
     environment:
       DB_HOST: database
       DB_NAME: vacations_db

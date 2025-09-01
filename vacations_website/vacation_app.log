@@ -308,3 +308,10 @@ INFO 2025-08-07 18:31:08,651 basehttp "GET /edit/2/ HTTP/1.1" 200 6256
 INFO 2025-08-30 18:47:27,256 autoreload Watching for file changes with StatReloader
 INFO 2025-08-30 18:47:47,668 basehttp "GET / HTTP/1.1" 302 0
 INFO 2025-09-01 17:13:02,870 autoreload Watching for file changes with StatReloader
+INFO 2025-09-01 17:16:46,761 autoreload Watching for file changes with StatReloader
+INFO 2025-09-01 17:16:59,244 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-09-01 17:16:59,336 basehttp "GET / HTTP/1.0" 302 0
+INFO 2025-09-01 17:17:05,738 basehttp "HEAD /login/ HTTP/1.0" 200 0
+INFO 2025-09-01 17:35:56,071 autoreload Watching for file changes with StatReloader
+INFO 2025-09-01 17:36:02,267 basehttp "HEAD /admin/ HTTP/1.1" 302 0
+INFO 2025-09-01 17:36:02,321 basehttp "HEAD /login/ HTTP/1.0" 200 0
