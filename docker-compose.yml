@@ -17,7 +17,7 @@ services:
       retries: 3
 
   backend:
-    image: your-dockerhub-username/stats-backend:latest
+    image: georgem94/stats-backend:latest
     ports:
       - "8000:8000"
     environment:
@@ -33,14 +33,14 @@ services:
       - ./stats_website/backend:/app
 
   frontend:
-    image: your-dockerhub-username/stats-frontend:latest
+    image: georgem94/stats-frontend:latest
     ports:
       - "80:80"
     depends_on:
       - backend
 
   vacations-backend:
-    image: your-dockerhub-username/vacations-backend:latest
+    image: georgem94/vacations-backend:latest
     ports:
       - "8001:8000"
     environment:
