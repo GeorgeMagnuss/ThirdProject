@@ -9,9 +9,6 @@ COPY . .
 
 RUN python manage.py collectstatic --noinput
 
-COPY start.sh /app/start.sh
-RUN chmod +x /app/start.sh
-
 EXPOSE 8000
 
-CMD ["/app/start.sh"]
+ENTRYPOINT ["sh", "-c", "python manage.py migrate --noinput && python manage.py shell -c \"from django.contrib.auth.models import User; User.objects.filter(username='admin').exists() or User.objects.create_superuser('admin', 'admin@test.com', 'admin123')\" && gunicorn --bind 0.0.0.0:8000 stats_backend.wsgi:application"]
