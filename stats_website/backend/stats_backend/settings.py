@@ -11,7 +11,13 @@ SECRET_KEY = 'django-insecure-your-secret-key-here'
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    '0.0.0.0',
+    os.getenv('EC2_HOST', ''),
+    os.getenv('DOMAIN_NAME', ''),
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -105,10 +111,14 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:3000",
     "http://localhost:3001",
     "http://127.0.0.1:3001",
+    f"http://{os.getenv('EC2_HOST', '')}",
+    f"https://{os.getenv('EC2_HOST', '')}",
+    f"http://{os.getenv('DOMAIN_NAME', '')}",
+    f"https://{os.getenv('DOMAIN_NAME', '')}",
 ]
 
 CORS_ALLOW_CREDENTIALS = True
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = DEBUG
 CORS_ALLOWED_HEADERS = [
     'accept',
     'accept-encoding',

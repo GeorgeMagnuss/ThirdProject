@@ -6,7 +6,7 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: password
     ports:
-      - "5436:5432"
+      - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
       - ./init_db.sql:/docker-entrypoint-initdb.d/init_db.sql
@@ -19,7 +19,7 @@ services:
   backend:
     build: ./stats_website/backend
     ports:
-      - "8002:8000"
+      - "8000:8000"
     environment:
       DB_HOST: database
       DB_NAME: vacations_db

@@ -3,7 +3,9 @@ services:
     image: georgem94/vacation-backend:latest
     container_name: vacation_backend
     environment:
-      - DEBUG=1
+      - DEBUG=0
+      - EC2_HOST=${EC2_HOST:-}
+      - DOMAIN_NAME=${DOMAIN_NAME:-}
     ports:
       - "8000:8000"
     command: >
