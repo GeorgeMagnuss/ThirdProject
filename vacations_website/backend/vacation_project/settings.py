@@ -24,16 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-2@_#hok50zyo&f*f3wdytoyy3$#1jz@%$b4kl=0(h_&kdk#)%4'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = [
-    'localhost',
-    '127.0.0.1',
-    '0.0.0.0',
-    'testserver',
-    os.getenv('EC2_HOST', ''),
-    os.getenv('DOMAIN_NAME', ''),
-]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -130,7 +123,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
-STATICFILES_DIRS = [BASE_DIR / 'static']
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
