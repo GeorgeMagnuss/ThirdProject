@@ -55,5 +55,12 @@ services:
     volumes:
       - ./vacations_website:/app
 
+  vacations-frontend:
+    image: georgem94/vacations-frontend:latest
+    ports:
+      - "8080:80"
+    depends_on:
+      - vacations-backend
+
 volumes:
   postgres_data:
