@@ -6,7 +6,7 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: password
     ports:
-      - "5432:5432"
+      - "5433:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
       - ./init_db.sql:/docker-entrypoint-initdb.d/init_db.sql
@@ -17,7 +17,7 @@ services:
       retries: 3
 
   backend:
-    build: ./stats_website/backend
+    image: your-dockerhub-username/stats-backend:latest
     ports:
       - "8000:8000"
     environment:
@@ -33,11 +33,27 @@ services:
       - ./stats_website/backend:/app
 
   frontend:
-    build: ./stats_website/frontend
+    image: your-dockerhub-username/stats-frontend:latest
     ports:
       - "80:80"
     depends_on:
       - backend
+
+  vacations-backend:
+    image: your-dockerhub-username/vacations-backend:latest
+    ports:
+      - "8001:8000"
+    environment:
+      DB_HOST: database
+      DB_NAME: vacations_db
+      DB_USER: postgres
+      DB_PASSWORD: password
+      DB_PORT: 5432
+    depends_on:
+      database:
+        condition: service_healthy
+    volumes:
+      - ./vacations_website:/app
 
 volumes:
   postgres_data:

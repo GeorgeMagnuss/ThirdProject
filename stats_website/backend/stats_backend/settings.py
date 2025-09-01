@@ -9,15 +9,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-your-secret-key-here'
 
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = [
-    'localhost',
-    '127.0.0.1',
-    '0.0.0.0',
-    os.getenv('EC2_HOST', ''),
-    os.getenv('DOMAIN_NAME', ''),
-]
+ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -111,11 +105,23 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:3000",
     "http://localhost:3001",
     "http://127.0.0.1:3001",
-    f"http://{os.getenv('EC2_HOST', '')}",
-    f"https://{os.getenv('EC2_HOST', '')}",
-    f"http://{os.getenv('DOMAIN_NAME', '')}",
-    f"https://{os.getenv('DOMAIN_NAME', '')}",
 ]
+
+# Add EC2/production origins if environment variables are set
+EC2_HOST = os.getenv('EC2_HOST')
+DOMAIN_NAME = os.getenv('DOMAIN_NAME')
+
+if EC2_HOST:
+    CORS_ALLOWED_ORIGINS.extend([
+        f"http://{EC2_HOST}",
+        f"https://{EC2_HOST}",
+    ])
+
+if DOMAIN_NAME:
+    CORS_ALLOWED_ORIGINS.extend([
+        f"http://{DOMAIN_NAME}",
+        f"https://{DOMAIN_NAME}",
+    ])
 
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOW_ALL_ORIGINS = DEBUG
