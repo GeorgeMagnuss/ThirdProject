@@ -28,6 +28,64 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
+# CSRF and Security settings for production
+CSRF_TRUSTED_ORIGINS = [
+    'http://51.20.138.148:8080',
+    'https://51.20.138.148:8080',
+    'http://51.20.138.148',
+    'https://51.20.138.148',
+    'http://localhost:8080',
+    'http://127.0.0.1:8080',
+]
+
+CSRF_COOKIE_SECURE = False
+CSRF_COOKIE_HTTPONLY = False
+CSRF_USE_SESSIONS = False
+CSRF_COOKIE_SAMESITE = 'Lax'
+CSRF_FAILURE_VIEW = 'django.views.csrf.csrf_failure'
+
+# Session settings
+SESSION_COOKIE_SECURE = False
+SESSION_COOKIE_HTTPONLY = True
+SESSION_COOKIE_SAMESITE = 'Lax'
+SESSION_COOKIE_AGE = 86400  # 24 hours
+
+# Security settings for production
+SECURE_BROWSER_XSS_FILTER = True
+SECURE_CONTENT_TYPE_NOSNIFF = True
+X_FRAME_OPTIONS = 'DENY'
+
+# CORS settings
+CORS_ALLOWED_ORIGINS = [
+    'http://51.20.138.148:8080',
+    'https://51.20.138.148:8080',
+    'http://51.20.138.148',
+    'https://51.20.138.148',
+    'http://localhost:8080',
+    'http://127.0.0.1:8080',
+]
+
+CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_ALL_ORIGINS = False
+
+CORS_ALLOWED_HEADERS = [
+    'accept',
+    'accept-encoding',
+    'authorization',
+    'content-type',
+    'dnt',
+    'origin',
+    'user-agent',
+    'x-csrftoken',
+    'x-requested-with',
+    'cookie',
+    'referer',
+]
+
+CORS_EXPOSE_HEADERS = [
+    'set-cookie',
+]
+
 
 # Application definition
 
@@ -38,10 +96,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',
     'vacations',
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',

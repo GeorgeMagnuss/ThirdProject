@@ -105,6 +105,10 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:3000",
     "http://localhost:3001",
     "http://127.0.0.1:3001",
+    "http://51.20.138.148",
+    "http://51.20.138.148:80",
+    "https://51.20.138.148",
+    "https://51.20.138.148:80",
 ]
 
 # Add EC2/production origins if environment variables are set
@@ -124,7 +128,36 @@ if DOMAIN_NAME:
     ])
 
 CORS_ALLOW_CREDENTIALS = True
-CORS_ALLOW_ALL_ORIGINS = DEBUG
+CORS_ALLOW_ALL_ORIGINS = False
+
+# CSRF and Security settings for production
+CSRF_TRUSTED_ORIGINS = [
+    'http://51.20.138.148',
+    'http://51.20.138.148:80',
+    'http://51.20.138.148:8000',
+    'https://51.20.138.148',
+    'https://51.20.138.148:80',
+    'https://51.20.138.148:8000',
+    'http://localhost',
+    'http://127.0.0.1',
+]
+
+CSRF_COOKIE_SECURE = False
+CSRF_COOKIE_HTTPONLY = False
+CSRF_USE_SESSIONS = False
+CSRF_COOKIE_SAMESITE = 'Lax'
+CSRF_FAILURE_VIEW = 'django.views.csrf.csrf_failure'
+
+# Session settings
+SESSION_COOKIE_SECURE = False
+SESSION_COOKIE_HTTPONLY = True
+SESSION_COOKIE_SAMESITE = 'Lax'
+SESSION_COOKIE_AGE = 86400  # 24 hours
+
+# Security settings for production
+SECURE_BROWSER_XSS_FILTER = True
+SECURE_CONTENT_TYPE_NOSNIFF = True
+X_FRAME_OPTIONS = 'DENY'
 CORS_ALLOWED_HEADERS = [
     'accept',
     'accept-encoding',
@@ -135,4 +168,10 @@ CORS_ALLOWED_HEADERS = [
     'user-agent',
     'x-csrftoken',
     'x-requested-with',
+    'cookie',
+    'referer',
+]
+
+CORS_EXPOSE_HEADERS = [
+    'set-cookie',
 ]
